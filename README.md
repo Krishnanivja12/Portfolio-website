@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/krishnanivja/"><img src="https://img.shields.io/badge/LinkedIn-Krishna%20Nivja-blue?logo=linkedin" alt="LinkedIn"></a>
   <a href="#"><img src="https://img.shields.io/badge/Resume-Download-orange?logo=read-the-docs" alt="Resume"></a>
-  <a href="https://github.com/krishnanivja"><img src="https://img.shields.io/github/followers/krishnanivja?label=Follow&style=social" alt="GitHub Followers"></a>
+  <a href="https://github.com/krishnanivja12"><img src="https://img.shields.io/github/followers/krishnanivja?label=Follow&style=social" alt="GitHub Followers"></a>
 </p>
 
 ---
