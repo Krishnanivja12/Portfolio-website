@@ -167,8 +167,17 @@ nav#header {
 .profile-image {
   width: 320px;
   border-radius: 50%;
-  border: 2.5px solid var(--purple);
+  border: 2.5px solid var(--white);
   animation: float 2s ease-in-out infinite;
+}
+
+@keyframes waveMove {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(4px); }
+  40%  { transform: translateX(-4px); }
+  60%  { transform: translateX(4px); }
+  80%  { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
 }
 
 /* Animations */
