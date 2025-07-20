@@ -311,6 +311,27 @@ nav#header {
   }
 }
 
+.social_icons a {
+  display: inline-block;
+  height: 40px; /* You can adjust height */
+  padding: 8px; /* Optional: increases clickable area */
+  transition: transform 0.2s ease;
+}
+
+.social_icons a img {
+  height: 24px;
+  width: auto;
+  vertical-align: middle;
+  filter: grayscale(100%) brightness(0%);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Apply hover to anchor, not just image */
+.social_icons a:hover img {
+  filter: brightness(1000%) saturate(0%);
+  transform: scale(1.2);
+}
+
 /* ================= SECTION HEADINGS ================= */
 .section {
   padding: 90px 0;
