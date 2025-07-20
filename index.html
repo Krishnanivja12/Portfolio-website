@@ -354,27 +354,37 @@
               </div>
             </div>
           </div>
-
-          <!-- Right: Contact Form -->
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name"><i class="fas fa-user"></i> Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email"><i class="fas fa-envelope"></i> Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="message"><i class="fas fa-comment"></i> Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn">
-              Send Message <i class="fas fa-paper-plane"></i>
-            </button>
-          </form>
+      <!-- Right: Contact Form -->
+      <form class="contact-form" id="contactForm" method="POST" action="https://formsubmit.co/krishnanivja249@gmail.com">
+        <!-- Hidden Settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New Portfolio Contact Message!">
+        
+        <!-- Name Field -->
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user"></i> Name</label>
+          <input type="text" id="name" name="name" required />
         </div>
-      </div>
+        
+        <!-- Email Field -->
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        
+        <!-- Message Field -->
+        <div class="form-group">
+          <label for="message"><i class="fas fa-comment"></i> Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+      
+        <!-- Submit Button -->
+        <button type="submit" class="btn">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+
     </section>
 
     <!-- ===== Footer ===== -->
@@ -457,6 +467,7 @@
     document.body.removeChild(link);
   }
   </script>
+        
 
 
 </body>
