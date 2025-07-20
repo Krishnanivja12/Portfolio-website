@@ -38,16 +38,16 @@ body {
 /* ================= NAVBAR ================= */
 nav#header {
   display: flex;
-  justify-content: space-between; /* space between logo, menu, and button */
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   position: sticky;
-  top: 0;
+  top: 0; /* ⬅️ Stick it directly to the top */
   z-index: 999;
-  border-radius: 12px; /* 🎯 Curved Edges */
-  margin: 0.5rem 1rem;   /* optional: give space from sides for curve visibility */
+  border-radius: 12px;
+  margin: 0 1rem; /* ⬅️ Removed top margin to eliminate top spacing */
 }
 
 .nav-menu {
@@ -126,6 +126,29 @@ nav#header {
 .featured-text-btn {
   margin-top: 15px;
 }
+.featured-text {
+  flex: 1;
+  padding-left: 40px;  /* Shifts the whole left side content */
+}
+
+/* Optional: Tune individual spacing if needed */
+.featured-name {
+  margin-bottom: 10px;
+}
+
+.featured-text-info {
+  margin-top: 15px;
+}
+
+.featured-text-btn {
+  margin-top: 20px;
+}
+
+.social_icons {
+  margin-top: 25px;
+  padding-left: 5px;  /* Slight shift of icons */
+}
+
 
 .btn {
   display: inline-block;
@@ -160,23 +183,17 @@ nav#header {
 .featured-image {
   flex: 1;
   display: flex;
-  justify-content: Right;
+  justify-content: right;
   animation: slideInRight 1s ease-in-out;
+  padding-right: 40px;  /* ✅ Add this line */
 }
+
 
 .profile-image {
   width: 320px;
   border-radius: 50%;
+  border: 3.5px solid var(--purple);
   animation: float 2s ease-in-out infinite;
-}
-
-@keyframes waveMove {
-  0%   { transform: translateX(0); }
-  20%  { transform: translateX(4px); }
-  40%  { transform: translateX(-4px); }
-  60%  { transform: translateX(4px); }
-  80%  { transform: translateX(-4px); }
-  100% { transform: translateX(0); }
 }
 
 /* Animations */
@@ -253,6 +270,46 @@ nav#header {
   }
 }
 
+@media (max-width: 768px) {
+  .featured-box {
+    flex-direction: column;
+    padding: 60px 20px 40px;
+    text-align: center;
+  }
+
+  .featured-text {
+    padding-left: 0;
+  }
+
+  .featured-image {
+    justify-content: center;
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  .profile-image {
+    width: 220px;  /* Smaller profile image on mobile */
+  }
+
+  .featured-text-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* space between buttons */
+    margin-top: 15px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .social_icons {
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
 
 /* ================= SECTION HEADINGS ================= */
 .section {
