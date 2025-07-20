@@ -192,7 +192,7 @@ nav#header {
 .profile-image {
   width: 320px;
   border-radius: 50%;
-  border: 3.5px solid var(--purple);
+  border: 3.5px solid var(--white);
   animation: float 2s ease-in-out infinite;
 }
 
