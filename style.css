@@ -408,7 +408,7 @@ nav#header {
 }
 
 #coding .top-header span {
-  color: #377;
+  color: var(--text);
   font-size: 1rem;
 }
 
