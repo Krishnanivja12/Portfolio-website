@@ -649,6 +649,12 @@ nav#header {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* 🚀 Hover effect added */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
 .image-wrapper {
   aspect-ratio: 16 / 9;
   overflow: hidden;
