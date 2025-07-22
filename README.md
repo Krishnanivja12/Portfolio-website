@@ -42,3 +42,4 @@ This is my personal portfolio website built to:
 ### 📥 1. Clone the Repository
 ```bash
 git clone https://github.com/Krishnanivja12/Protfolio.git
+cd Protfolio
